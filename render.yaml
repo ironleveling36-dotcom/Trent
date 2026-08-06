@@ -2,7 +2,7 @@ services:
   - type: web
     name: shadow-stream-bot
     runtime: docker
-    repo: https://github.com/YOUR_USERNAME/shadow-stream-bot
+    repo: https://github.com/ironleveling36-dotcom/Trent.git
     plan: free
     dockerfilePath: ./Dockerfile
     envVars:
