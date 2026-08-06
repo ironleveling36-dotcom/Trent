@@ -1,0 +1,9 @@
+*.torrent
+*.mkv
+*.mp4
+*.log
+__pycache__/
+.env
+*.pyc
+/tmp/
+.DS_Store

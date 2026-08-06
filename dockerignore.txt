@@ -1,0 +1,13 @@
+.git
+__pycache__
+*.pyc
+*.torrent
+*.mkv
+*.mp4
+*.log
+.env
+*.md
+Dockerfile
+render.yaml
+.gitignore
+README.md
