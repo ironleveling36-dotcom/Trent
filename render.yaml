@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: shadow-stream-bot
+    runtime: docker
+    repo: https://github.com/YOUR_USERNAME/shadow-stream-bot
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+        required: true
+      - key: MAX_SIZE_GB
+        value: 4
+      - key: CLEANUP_MINUTES
+        value: 15
+      - key: PORT
+        value: 10000
+      - key: STREAM_PORT_BASE
+        value: 20000
+    healthCheckPath: /health
+    autoDeploy: true
